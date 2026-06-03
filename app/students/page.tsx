@@ -31,6 +31,8 @@ export default function StudentsPage() {
       try {
         const response = await fetch('/api/students/list');
         const result = await response.json();
+
+        console.log("student",result)
         if (!response.ok) {
           throw new Error(result.message || 'Unable to load students.');
         }
