@@ -242,7 +242,7 @@ export default function AddStudentPage() {
     console.log('📤 Sending prediction payload to Flask API:', payload);
 
     try {
-      const response = await fetch('https://gate-prediction.onrender.com/predict', {
+      const response = await fetch('https://python-model-1-ziek.onrender.com/predict', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
